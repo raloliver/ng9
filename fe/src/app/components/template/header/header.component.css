@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo {
+    height: 32px;
+    margin-right: 25px;
+    filter: brightness(0) invert(1);
+}
