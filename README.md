@@ -31,3 +31,8 @@
 - `exports`
 - `providers`
 - `bootstrap`: geralmente utilizado no componente principal que será carregado no `main.ts`, que geralmente fica no APPModule, que inclusive apenas utiliza o `imports` e não tem `exports` (claro que isso em aplicações maiores ou com mais pessoas no projeto)
+
+
+### Novas descobertas
+
+- `--minimal`: criar projeto com menos arquivos (sem arquivos de testes unitários, com css e templates inline)
