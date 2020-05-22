@@ -40,9 +40,9 @@
 - `ng add`: adicionar novos pacotes oficiais do angular ao projeto.
 - Ao adicionar o Angular Material ao projeto, ele pergunta qual tema deseja utilizar, se quer adicionar a tipografia em todo o projeto e se quer ativar as animações.
 
-### Observables
+### Observables (programação reativa)
 
-- 
+- Um código se comportar de maneira pró-ativa consome muito processamento.
 
 ### Old but gold
 
