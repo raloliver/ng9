@@ -42,6 +42,7 @@
 - `ng lint`
 - `ng generate --help`
 - Components schematics https://angular.io/guide/schematics
+- `ng g c shell --export`: --export para exportar componente criado no módulo
 
 ### Observables (programação reativa)
 
@@ -53,6 +54,7 @@
 
 - Escopo isolado (exemplo: aplicação de estilos)
 - App Shell Model: separar o conteúdo (que se atualiza com mais frequência) do restante dos componentes.
+- `ng-content`: for transclusion content inside to component
 
 #### Diretivas
 
