@@ -39,6 +39,8 @@
 - `--minimal`: criar projeto com menos arquivos (sem arquivos de testes unitários, com css e templates inline)
 - `ng add`: adicionar novos pacotes oficiais do angular ao projeto.
 - Ao adicionar o Angular Material ao projeto, ele pergunta qual tema deseja utilizar, se quer adicionar a tipografia em todo o projeto e se quer ativar as animações.
+- `ng lint`
+- `ng generate --help`
 
 ### Observables (programação reativa)
 
