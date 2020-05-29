@@ -52,6 +52,7 @@
 #### Componentes
 
 - Escopo isolado (exemplo: aplicação de estilos)
+- App Shell Model: separar o conteúdo (que se atualiza com mais frequência) do restante dos componentes.
 
 #### Diretivas
 
