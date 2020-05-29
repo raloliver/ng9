@@ -41,6 +41,7 @@
 - Ao adicionar o Angular Material ao projeto, ele pergunta qual tema deseja utilizar, se quer adicionar a tipografia em todo o projeto e se quer ativar as animações.
 - `ng lint`
 - `ng generate --help`
+- Components schematics https://angular.io/guide/schematics
 
 ### Observables (programação reativa)
 
