@@ -86,3 +86,14 @@
 - Filtros para formatar um valor ou items de uma lista
 - Pode receber parâmetros
 - Pode ser encadeado (chaining)
+
+#### ReactiveX (programação reativa com padrão observer)
+
+![Sample](https://i.imgur.com/3uEioKD.png)
+
+- Código reativo X Código proativo
+- Padrão Observer: https://www.youtube.com/watch?v=REqVImw8Wgo
+- Event Handler, Listener, Callback...
+- Padrão orientado a eventos (Gang Of Four)
+- Historicamente tempos: callback => promisses (then) => observables
+- Observable: reusável, stream de dados e operadores (diversos).
