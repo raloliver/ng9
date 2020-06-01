@@ -43,6 +43,7 @@
 - `ng generate --help`
 - Components schematics https://angular.io/guide/schematics
 - `ng g c shell --export`: --export para exportar componente criado no módulo
+- `--skip-git`: não gera versionamento de código ao criar um novo projeto
 
 ### Observables (programação reativa)
 
