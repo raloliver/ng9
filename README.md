@@ -56,6 +56,7 @@
 - Escopo isolado (exemplo: aplicação de estilos)
 - App Shell Model: separar o conteúdo (que se atualiza com mais frequência) do restante dos componentes.
 - `ng-content`: for transclusion content inside to component
+- Cada tag do componente, é uma instância
 
 #### Diretivas
 
@@ -100,3 +101,19 @@
 - Observable: reusável, stream de dados e operadores (diversos).
 
 #### Services
+
+- São classes que têm como principal objetivo organizar e compartilhar métodos e dados entre componentes.
+- Geralmente utilizado para casos que não dizem respeito a parte visual da aplicação.
+- Forma de compartilhar métodos e dados entre os componentes.
+- Atenção as coerências à lógica.
+- Por padrão, ao utilizar o `@Injectable({provideIn: "root"})` ao ser injetado como dependencia, a instância do serviço será única.
+- `root`: alias para o AppModule
+- ModuleInjector (@NgModule and @Injectable) x ElementInjector (@Directive and @Component)
+- https://angular.io/guide/hierarchical-dependency-injection
+
+![Motivos para utilizar services](https://i.imgur.com/hbJic2T.png)
+
+> Injeção de Depedência: é um padrão no qual a classe recebe as dependências de uma fonte externa ao invés de criar por conta própria.
+
+![Sem DI](https://i.imgur.com/hbJic2T.png)
+![Com DI](https://i.imgur.com/rTR510p.png)
