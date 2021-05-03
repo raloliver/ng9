@@ -5,4 +5,7 @@
             favorite
         </i>
     </span>
+    <ul>
+        <li *loop="let item into ['fruits', 'vegetables', 'water'] using 'Link'"> {{item}} </li>
+    </ul>
 </mat-toolbar>

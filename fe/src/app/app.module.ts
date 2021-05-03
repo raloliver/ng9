@@ -15,6 +15,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { CrudComponent } from './views/crud/crud.component';
 import { GreenDirective } from './directives/green.directive';
+import { LoopDirective } from './directives/loop.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GreenDirective } from './directives/green.directive';
     NavComponent,
     HomeComponent,
     CrudComponent,
-    GreenDirective
+    GreenDirective,
+    LoopDirective
   ],
   imports: [
     BrowserModule,
