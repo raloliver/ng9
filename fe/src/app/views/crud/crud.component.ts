@@ -11,7 +11,7 @@ export class CrudComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  goToCreate(): void {
+  public goToCreate(): void {
     this.router.navigate(["crud/create"]);
   }
 }
