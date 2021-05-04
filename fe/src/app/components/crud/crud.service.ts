@@ -8,7 +8,7 @@ import { Product } from "./crud.model";
   providedIn: "root",
 })
 export class CrudService {
-  private endpoint: "http://localhost:3001/";
+  private endpoint = "http://localhost:3000/";
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
   public alertMessage(text: string): void {
