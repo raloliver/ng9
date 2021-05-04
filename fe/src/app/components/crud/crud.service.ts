@@ -26,4 +26,8 @@ export class CrudService {
   public create(item: Product, type: string = "products"): Observable<Product> {
     return this.http.post<Product>(this.endpoint + type, item);
   }
+
+  public read(type: string = "products"): Observable<Product[]> {
+    return this.http.get<Product[]>(this.endpoint + type);
+  }
 }

@@ -23,6 +23,11 @@ import { CrudComponent } from "./views/crud/crud.component";
 import { GreenDirective } from "./directives/green.directive";
 import { LoopDirective } from "./directives/loop.directive";
 import { CrudCreateComponent } from "./components/crud-create/crud-create.component";
+import { CrudReadComponent } from './components/crud-read/crud-read.component';
+import { TableComponent } from './components/template/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,8 @@ import { CrudCreateComponent } from "./components/crud-create/crud-create.compon
     GreenDirective,
     LoopDirective,
     CrudCreateComponent,
+    CrudReadComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +57,9 @@ import { CrudCreateComponent } from "./components/crud-create/crud-create.compon
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
