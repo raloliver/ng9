@@ -39,6 +39,8 @@ export class CrudCreateComponent implements OnInit, OnDestroy {
    * @memberof CrudCreateComponent
    */
   ngOnDestroy(): void {
-    this.subs.unsubscribe();
+    if (this.subs) {
+      this.subs.unsubscribe();
+    }
   }
 }
