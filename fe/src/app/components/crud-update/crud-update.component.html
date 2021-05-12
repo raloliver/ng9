@@ -1,5 +1,5 @@
 <mat-card *ngIf="(product | async) as item">
-    <mat-card-title>Edit Item</mat-card-title>
+    <mat-card-title>Update Item</mat-card-title>
     <form>
         <mat-form-field>
             <input matInput placeholder="Nome" type="text" [ngModel]="item.name" (ngModelChange)="item.name = $event"
@@ -11,9 +11,9 @@
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="update(item)" color="primary">
-        Salvar
+        Update
     </button>
     <button mat-raised-button (click)="goBack()">
-        Voltar
+        Cancel
     </button>
 </mat-card>

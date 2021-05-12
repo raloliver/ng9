@@ -30,7 +30,8 @@ import { TableComponent } from "./components/template/table/table.component";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
-import { CrudUpdateComponent } from './components/crud-update/crud-update.component';
+import { CrudUpdateComponent } from "./components/crud-update/crud-update.component";
+import { CrudDeleteComponent } from "./components/crud-delete/crud-delete.component";
 
 registerLocaleData(localePt);
 
@@ -48,6 +49,7 @@ registerLocaleData(localePt);
     CrudReadComponent,
     TableComponent,
     CrudUpdateComponent,
+    CrudDeleteComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<mat-card *ngIf="(product | async) as item">
+    <mat-card-title>Delete Item</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput readonly disabled placeholder="Nome" type="text" [ngModel]="item.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput readonly disabled placeholder=" R$" type="number" [ngModel]="item.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="delete(item.id)" color="primary">
+        Delete
+    </button>
+    <button mat-raised-button (click)="goBack()">
+        Cancel
+    </button>
+</mat-card>

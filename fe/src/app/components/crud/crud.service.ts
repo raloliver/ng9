@@ -41,4 +41,8 @@ export class CrudService {
   public update(item: Product, type: string = "products"): Observable<Product> {
     return this.http.put<Product>(`${this.endpoint}${type}/${item.id}`, item);
   }
+
+  public delete(id: number, type: string = "products"): Observable<Product> {
+    return this.http.delete<Product>(`${this.endpoint}${type}/${id}`);
+  }
 }
