@@ -1,1 +1,19 @@
-<p>crud-update works!</p>
+<mat-card *ngIf="(product | async) as item">
+    <mat-card-title>Edit Item</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" type="text" [ngModel]="item.name" (ngModelChange)="item.name = $event"
+                name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder=" R$" type="number" [ngModel]="item.price" (ngModelChange)="item.price = $event"
+                name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="update(item)" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="goBack()">
+        Voltar
+    </button>
+</mat-card>

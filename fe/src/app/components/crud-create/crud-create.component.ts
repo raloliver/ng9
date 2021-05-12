@@ -22,7 +22,7 @@ export class CrudCreateComponent implements OnInit, OnDestroy {
   public create(): void {
     this.subs.add(
       this.crudService.create(this.product).subscribe(() => {
-        this.crudService.alertMessage("Produto criado!");
+        this.crudService.alertMessage("Product created!");
         this.router.navigate(["/crud"]);
       })
     );

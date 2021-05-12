@@ -12,7 +12,7 @@ export class CrudService {
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
   public alertMessage(text: string): void {
-    this.snackBar.open(text, "Fechar", {
+    this.snackBar.open(text, "Close", {
       duration: 2500,
       horizontalPosition: "right",
       verticalPosition: "top",
@@ -34,13 +34,11 @@ export class CrudService {
     return this.http.get<Product[]>(this.endpoint + type);
   }
 
-  public readById(id: string): Observable<Product> {
-    const url = `${this.endpoint}/${id}`;
-    return this.http.get<Product>(url);
+  public readById(id: number, type: string = "products"): Observable<Product> {
+    return this.http.get<Product>(`${this.endpoint}${type}/${id}`);
   }
 
-  public update(item: Product): Observable<Product> {
-    const url = `${this.endpoint}/${item.id}`;
-    return this.http.put<Product>(url, item);
+  public update(item: Product, type: string = "products"): Observable<Product> {
+    return this.http.put<Product>(`${this.endpoint}${type}/${item.id}`, item);
   }
 }
