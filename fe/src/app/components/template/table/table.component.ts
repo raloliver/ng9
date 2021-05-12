@@ -21,9 +21,9 @@ export class TableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatTable) table: MatTable<TableItem>;
   dataSource: TableDataSource;
-  @Input() items: Product[];
+  @Input() items: TableItem[];
 
-  displayedColumns = ["id", "name", "price"];
+  displayedColumns = ["id", "name", "price", "action"];
 
   ngOnInit() {
     this.dataSource = new TableDataSource();

@@ -33,4 +33,14 @@ export class CrudService {
   public read(type: string = "products"): Observable<Product[]> {
     return this.http.get<Product[]>(this.endpoint + type);
   }
+
+  public readById(id: string): Observable<Product> {
+    const url = `${this.endpoint}/${id}`;
+    return this.http.get<Product>(url);
+  }
+
+  public update(item: Product): Observable<Product> {
+    const url = `${this.endpoint}/${item.id}`;
+    return this.http.put<Product>(url, item);
+  }
 }

@@ -30,6 +30,7 @@ import { TableComponent } from "./components/template/table/table.component";
 import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
+import { CrudUpdateComponent } from './components/crud-update/crud-update.component';
 
 registerLocaleData(localePt);
 
@@ -46,6 +47,7 @@ registerLocaleData(localePt);
     CrudCreateComponent,
     CrudReadComponent,
     TableComponent,
+    CrudUpdateComponent,
   ],
   imports: [
     BrowserModule,
