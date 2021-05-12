@@ -27,6 +27,9 @@ export class CrudService {
     return this.http.post<Product>(this.endpoint + type, item);
   }
 
+  /**
+   * parametros para paginação ?_page=1&_limit=1
+   */
   public read(type: string = "products"): Observable<Product[]> {
     return this.http.get<Product[]>(this.endpoint + type);
   }
