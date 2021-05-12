@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { HeaderService } from "src/app/components/template/header/header.service";
 
 @Component({
-  selector: 'fe-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: "fe-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.css"],
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private headerService: HeaderService) {
+    this.headerService.header = {
+      title: "Dashboard",
+      icon: "home",
+      link: "",
+    };
   }
 
+  ngOnInit(): void {}
 }
