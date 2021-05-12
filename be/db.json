@@ -14,6 +14,31 @@
       "id": 3,
       "name": "Glue",
       "price": 1
+    },
+    {
+      "name": "Garrafa",
+      "price": 1,
+      "id": 4
+    },
+    {
+      "name": "Geladeira",
+      "price": 1,
+      "id": 5
+    },
+    {
+      "name": "a",
+      "price": 1,
+      "id": 6
+    },
+    {
+      "name": "Huawei",
+      "price": 150,
+      "id": 7
+    },
+    {
+      "name": "iPhone",
+      "price": 1000,
+      "id": 8
     }
   ]
 }

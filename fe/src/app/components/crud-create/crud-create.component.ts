@@ -14,7 +14,7 @@ export class CrudCreateComponent implements OnInit, OnDestroy {
     name: null,
     price: null,
   };
-  private subs: Subscription;
+  private subs: Subscription = new Subscription();
   constructor(private crudService: CrudService, private router: Router) {}
 
   ngOnInit(): void {}

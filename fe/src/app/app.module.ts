@@ -1,8 +1,10 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { NgModule, LOCALE_ID } from "@angular/core";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { registerLocaleData } from "@angular/common";
+import localePt from "@angular/common/locales/pt";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -23,11 +25,13 @@ import { CrudComponent } from "./views/crud/crud.component";
 import { GreenDirective } from "./directives/green.directive";
 import { LoopDirective } from "./directives/loop.directive";
 import { CrudCreateComponent } from "./components/crud-create/crud-create.component";
-import { CrudReadComponent } from './components/crud-read/crud-read.component';
-import { TableComponent } from './components/template/table/table.component';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { CrudReadComponent } from "./components/crud-read/crud-read.component";
+import { TableComponent } from "./components/template/table/table.component";
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatSortModule } from "@angular/material/sort";
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -61,7 +65,12 @@ import { MatSortModule } from '@angular/material/sort';
     MatPaginatorModule,
     MatSortModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID,
+      useValue: "pt",
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -8,6 +8,7 @@ import {
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { MatTable } from "@angular/material/table";
+import { Product } from "../../crud/crud.model";
 import { TableDataSource, TableItem } from "./table-datasource";
 
 @Component({
@@ -19,14 +20,12 @@ export class TableComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatTable) table: MatTable<TableItem>;
-  // dataSource: TableDataSource;
-  @Input() dataSource: TableDataSource;
+  dataSource: TableDataSource;
+  @Input() items: Product[];
 
-  /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ["id", "name", "price"];
 
   ngOnInit() {
-    console.log(this.dataSource);
     this.dataSource = new TableDataSource();
   }
 
