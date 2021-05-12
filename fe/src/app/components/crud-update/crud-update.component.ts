@@ -21,6 +21,9 @@ export class CrudUpdateComponent implements OnInit {
     private route: ActivatedRoute
   ) {}
 
+  /**
+   * It's possible to add just a plus(+) before instead to use parseInt
+   */
   ngOnInit(): void {
     const productId = parseInt(this.route.snapshot.paramMap.get("id"));
     this.product = this.crudService.readById(productId);

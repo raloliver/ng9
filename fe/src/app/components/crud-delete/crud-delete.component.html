@@ -8,7 +8,7 @@
             <input matInput readonly disabled placeholder=" R$" type="number" [ngModel]="item.price" name="price">
         </mat-form-field>
     </form>
-    <button mat-raised-button (click)="delete(item.id)" color="primary">
+    <button mat-raised-button (click)="delete(item.id)" color="warn">
         Delete
     </button>
     <button mat-raised-button (click)="goBack()">

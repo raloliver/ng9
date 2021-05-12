@@ -1,3 +1,8 @@
+# Como rodar o projeto?
+
+1. Entrar na pasta **be** e rodar `npm install && npm start`
+1. Entrar na pasta **fe** e rodar `npm install && npm start`
+
 ### O que é o Angular ?
 
 > Um framework Javascript desenvolvido pelo Google para criação de aplicações Web SPA baseada em componentes.
@@ -6,9 +11,9 @@
 - Angular CLI
 - Typescript
 - Componentes (Component Tree)
-    - `main.ts`
-    - APPModule (algo que não existe em outros frameworks)
-    - AppComponent (referência a outros componentes)
+  - `main.ts`
+  - APPModule (algo que não existe em outros frameworks)
+  - AppComponent (referência a outros componentes)
 - Uso constante de decorators
 
 ### O que é um componente?
@@ -32,7 +37,6 @@
 - `exports`
 - `providers`
 - `bootstrap`: geralmente utilizado no componente principal que será carregado no `main.ts`, que geralmente fica no APPModule, que inclusive apenas utiliza o `imports` e não tem `exports` (claro que isso em aplicações maiores ou com mais pessoas no projeto)
-
 
 ### Novas descobertas
 
@@ -62,8 +66,7 @@
 
 - Diretiva de atributos: altera a aparência e o comportamento de um elemento, componente ou outro diretiva.
 - `constructor(el: ElementRef) {el.nativeElement.style.color = 'red'}`
-- Diretiva estrutural: altera o layout adicionando e removendo elementod do DOM. Sempre utilizam um * a frente, exemplo: `*ngFor` ou `*ngIF`
-
+- Diretiva estrutural: altera o layout adicionando e removendo elementod do DOM. Sempre utilizam um * a frente, exemplo: `*ngFor`ou`\*ngIF`
 
 #### Property Binding
 
@@ -77,7 +80,6 @@
 
 - Do TS para o HTML: use apenas o `[]` e informa que a propriedade nativa do elemento HTML recebe o valor que vem do controller (TS)
 - `[(ngModel)]`
-
 
 #### Router, Angular Router
 

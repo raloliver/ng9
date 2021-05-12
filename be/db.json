@@ -7,7 +7,7 @@
     },
     {
       "name": "Garrafa",
-      "price": 1,
+      "price": 13,
       "id": 4
     },
     {
@@ -21,14 +21,9 @@
       "id": 7
     },
     {
-      "name": "iPhone",
+      "name": "iPhones",
       "price": 1000,
       "id": 8
-    },
-    {
-      "name": "New one edit",
-      "price": 1234,
-      "id": 9
     }
   ]
 }
